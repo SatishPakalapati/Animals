@@ -32,6 +32,14 @@ public class Solution {
         bird.sing();
         SwimmingAnimals fish=new SwimmingAnimals();
         fish.swim();
+        SwimmingAnimals clownFish1=new SwimmingAnimals(true,false);
+        clownFish1.swim();
+        SwimmingAnimals clownFish2=new SwimmingAnimals("small", "orange");
+        clownFish2.swim();
+        SwimmingAnimals shark1=new SwimmingAnimals(false, true);
+        shark1.swim();
+        SwimmingAnimals shark2=new SwimmingAnimals("large", "grey");
+        shark2.swim();
     }
     
 }
