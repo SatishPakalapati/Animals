@@ -19,6 +19,16 @@ public class Solution {
         chicken.sing();
         Bird rooster=new Bird("Cock-a-doodle-doo");
         rooster.sing();
+        Bird parrotDog=new Bird("Woof, woof", true); // object for Parrot staying with Dog
+        parrotDog.sing();
+        Bird parrotCat=new Bird("Meow", true);  // object for Parrot staying with Cat
+        parrotCat.sing();
+        Bird parrotRooster=new Bird("Cock-a-doodle-doo", true); // object for Parrot staying with Rooster
+        parrotRooster.sing();
+        Bird parrotDuck=new Bird("Quack, quack", true); // object for Parrot staying with Duck
+        parrotDuck.sing();
+        Bird parrotPhone=new Bird("Tring, tring", false); // Object for Parrot staying with phone
+        parrotPhone.sing();
         bird.sing();
     }
     

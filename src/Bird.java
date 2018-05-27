@@ -11,18 +11,37 @@
 public class Bird extends Animal{
     
     public String sound=""; // Created a property for the sound
+    public Boolean isParrotStayingWithOtherAnimal=null;
     Bird(){
         
     }
     Bird(String sound){     // Passing the sound property to the constuctor
         this.sound=sound;
     }
+    
+    Bird(String sound, Boolean paStWiOtAn){ //two args onstructor to check whether the parrot is staying with any other animal and the sound of the animal
+        this.sound=sound;
+        this.isParrotStayingWithOtherAnimal=paStWiOtAn;
+    }
        
     void fly(){
     System.out.println("I am Flying...");
     }
     void sing(){
-        if(sound=="Quack, quack"){
+         if(isParrotStayingWithOtherAnimal!=null && isParrotStayingWithOtherAnimal==true){
+            if(sound=="Woof, woof"){
+                System.out.println(" I am a Parrot, staying with Dog and my sound is : " + sound);
+            }else if(sound=="Meow"){
+                System.out.println(" I am a Parrot, staying with Cat and my sound is : " + sound);
+            }else if(sound=="Cock-a-doodle-doo"){
+                System.out.println(" I am a Parrot, staying with Rooster and my sound is : " + sound);
+            }else if(sound=="Quack, quack"){
+                System.out.println(" I am a Parrot, staying with Duck and my sound is : " + sound);
+            }
+        }else if(isParrotStayingWithOtherAnimal!=null && isParrotStayingWithOtherAnimal==false){
+            System.out.println("I am a Parrot staying with Phone and my sound is : " + sound);
+        }
+        else if(sound=="Quack, quack"){
             System.out.println("I am a Duck and my sound is...: Quack, quack");
         }else if(sound=="Cluck, cluck"){
         System.out.println("I am a Chicken and my sound is...: Cluck, cluck");
