@@ -13,6 +13,10 @@ public class Solution {
         Bird bird=new Bird();
         bird.walk();
         bird.fly();
+        Bird duck=new Bird("Quack, quack"); // Passing Duck sound to the Bird Constructor
+        Bird chicken=new Bird("Cluck, cluck"); // Passing Chicken sound to the Bird Constructor
+        duck.sing();
+        chicken.sing();
         bird.sing();
     }
     
