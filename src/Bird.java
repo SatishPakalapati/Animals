@@ -26,6 +26,9 @@ public class Bird extends Animal{
             System.out.println("I am a Duck and my sound is...: Quack, quack");
         }else if(sound=="Cluck, cluck"){
         System.out.println("I am a Chicken and my sound is...: Cluck, cluck");
+        
+        }else if(sound=="Cock-a-doodle-doo"){
+            System.out.println("I am a Rooster and my sound is...: Cock-a-doodle-doo");
         }else{
             System.out.println("I am a bird... I am Singing...");
         }

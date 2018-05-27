@@ -17,6 +17,8 @@ public class Solution {
         Bird chicken=new Bird("Cluck, cluck"); // Passing Chicken sound to the Bird Constructor
         duck.sing();
         chicken.sing();
+        Bird rooster=new Bird("Cock-a-doodle-doo");
+        rooster.sing();
         bird.sing();
     }
     
