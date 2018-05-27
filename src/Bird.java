@@ -27,30 +27,43 @@ public class Bird extends Animal{
     void fly(){
     System.out.println("I am Flying...");
     }
-    void sing(){
+    int sing(int s){
+        try{
          if(isParrotStayingWithOtherAnimal!=null && isParrotStayingWithOtherAnimal==true){
             if(sound=="Woof, woof"){
                 System.out.println(" I am a Parrot, staying with Dog and my sound is : " + sound);
+                s++;
+                System.out.println(s);
             }else if(sound=="Meow"){
                 System.out.println(" I am a Parrot, staying with Cat and my sound is : " + sound);
+                s++;
+                System.out.println(s);
             }else if(sound=="Cock-a-doodle-doo"){
                 System.out.println(" I am a Parrot, staying with Rooster and my sound is : " + sound);
+                s++;
             }else if(sound=="Quack, quack"){
                 System.out.println(" I am a Parrot, staying with Duck and my sound is : " + sound);
+                s++;
             }
         }else if(isParrotStayingWithOtherAnimal!=null && isParrotStayingWithOtherAnimal==false){
             System.out.println("I am a Parrot staying with Phone and my sound is : " + sound);
+            s++;
         }
         else if(sound=="Quack, quack"){
             System.out.println("I am a Duck and my sound is...: Quack, quack");
+            s++;
         }else if(sound=="Cluck, cluck"){
         System.out.println("I am a Chicken and my sound is...: Cluck, cluck");
+        s++;
         
         }else if(sound=="Cock-a-doodle-doo"){
             System.out.println("I am a Rooster and my sound is...: Cock-a-doodle-doo");
+            s++;
         }else{
             System.out.println("I am a bird... I am Singing...");
+            s++;
         }
+        }finally{return s;} // this finally block is used to return the count of Singing animals.
     }
     
 }
