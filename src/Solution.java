@@ -40,6 +40,8 @@ public class Solution {
         shark1.swim();
         SwimmingAnimals shark2=new SwimmingAnimals("large", "grey");
         shark2.swim();
+        SwimmingAnimals dolp=new SwimmingAnimals(true);
+        dolp.swim();
     }
     
 }

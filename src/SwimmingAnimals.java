@@ -13,11 +13,15 @@ public class SwimmingAnimals extends Animal{
     
     boolean jokes=false;
     boolean eatOtherFishes=false;
+    boolean canWalk=false;
     String size=null;
     String colour;
     
     SwimmingAnimals(){
         
+    }
+    SwimmingAnimals(boolean w){
+        canWalk=w;
     }
     
     SwimmingAnimals(boolean j, boolean eat){
@@ -30,7 +34,7 @@ public class SwimmingAnimals extends Animal{
     }
     
     void swim(){
-        if(jokes==true){  // Jokes and eating other fishes are obvious conditions. So checking these conditions before determining the size and color of the fish.
+        if(jokes==true){
             System.out.println("I am a clownfish and I can make jokes");
         }else if(eatOtherFishes==true){
             System.out.println("I am a Shark and I eat other fishes");
@@ -40,6 +44,8 @@ public class SwimmingAnimals extends Animal{
             }else if(size=="small" && colour=="orange"){
                 System.out.println("I am a clownfish... I am small in size and orange in colour...");
             }
+        }else if(canWalk==true){
+            System.out.println("I am a Dolphine... I can swim and walk... ");
         }else{  
         System.out.println("I am a Fish... I am swimming");
         }
