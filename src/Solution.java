@@ -40,6 +40,15 @@ public class Solution {
         scount=parrotDuck.sing(scount);
         Bird parrotPhone=new Bird("Tring, tring", false);
         scount=parrotPhone.sing(scount);
+        //Rooster speaks different languages
+        Bird rooDanish=new Bird(true, "Danish");
+        scount=rooDanish.sing(scount);
+        Bird rooDutch=new Bird(true, "Dutch");
+        scount=rooDutch.sing(scount);
+        Bird rooGreek=new Bird(true, "Greek");
+        scount=rooGreek.sing(scount);
+        Bird rooItalian=new Bird(true, "Italian");
+        scount=rooItalian.sing(scount);
         scount=bird.sing(scount);
         swcount=bird.swim(false,swcount);
         SwimmingAnimals fish=new SwimmingAnimals();
