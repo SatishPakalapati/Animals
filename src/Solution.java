@@ -42,6 +42,12 @@ public class Solution {
         shark2.swim();
         SwimmingAnimals dolp=new SwimmingAnimals(true);
         dolp.swim();
+        AnimalsChangeBehaviour bfly=new AnimalsChangeBehaviour(true, false, false);
+        bfly.result();
+        AnimalsChangeBehaviour cpillar=new AnimalsChangeBehaviour(false, true, false);
+        cpillar.result();
+        AnimalsChangeBehaviour unknown=new AnimalsChangeBehaviour(false, false, false);
+        unknown.result();
     }
     
 }
